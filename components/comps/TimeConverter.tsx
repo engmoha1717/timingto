@@ -16,6 +16,7 @@ import GlassCard from './GlassCard';
 import AdPlaceholder from './AdPlaceholder';
 import CityAutocomplete from './CityAutocomplete';
 import Background from '../Background';
+import GoogleAd from './GoogleAdProps';
 
 
 const getCityData = (): City[] => {
@@ -391,7 +392,13 @@ export default function TimeConverter() {
             <div className="space-y-6 animate-in fade-in slide-in-from-right-8 duration-700 delay-200">
                <GlassCard className="p-6">
                   <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Sponsored</h3>
-                  <AdPlaceholder variant="vertical" />
+                  {/* <AdPlaceholder variant="vertical" /> */}
+                  <GoogleAd
+                    adSlot="YOUR_AD_SLOT_ID_HERE" 
+                    adFormat="vertical"
+                    style={{ minHeight: '250px' }}
+                    className="w-full"
+                  />
                </GlassCard>
 
                <div className="p-6 rounded-2xl border border-white/5 bg-white/[0.02]">
