@@ -3,7 +3,7 @@ import TimeConverter from "@/components/comps/TimeConverter";
 
 
 export default function Page() {
-  return <TimeConverter />;
+  return <TimeConverter/>;
 }
 
 

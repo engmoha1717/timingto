@@ -13,7 +13,7 @@ import { City, UserRole, ConversionResult } from '@/lib/types';
 import { getGeminiContext } from '@/lib/services/geminiService';
 
 import GlassCard from './GlassCard';
-import AdPlaceholder from './AdPlaceholder';
+// import AdPlaceholder from './AdPlaceholder';
 import CityAutocomplete from './CityAutocomplete';
 import Background from '../Background';
 import GoogleAd from './GoogleAdProps';
@@ -394,7 +394,7 @@ export default function TimeConverter() {
                   <h3 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Sponsored</h3>
                   {/* <AdPlaceholder variant="vertical" /> */}
                   <GoogleAd
-                    adSlot="YOUR_AD_SLOT_ID_HERE" 
+                    adSlot="2517529300" 
                     adFormat="vertical"
                     style={{ minHeight: '250px' }}
                     className="w-full"

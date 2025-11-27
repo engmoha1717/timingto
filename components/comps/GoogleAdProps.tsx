@@ -33,15 +33,21 @@ const GoogleAd: React.FC<GoogleAdProps> = ({
 
   return (
     <div className={className} style={style}>
-      <ins
+      <ins 
+      className="adsbygoogle"
+     data-ad-client="ca-pub-1286948529221538"
+     data-ad-slot="2517529300"
+     data-ad-format="auto"
+     ></ins>
+      {/* <ins
         ref={adRef}
         className="adsbygoogle"
         style={{ display: 'block', ...style }}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" // Replace with your AdSense ID
+        data-ad-client="ca-pub-1286948529221538" // Replace with your AdSense ID
         data-ad-slot={adSlot}
         data-ad-format={adFormat}
         data-full-width-responsive={fullWidthResponsive ? 'true' : 'false'}
-      />
+      /> */}
     </div>
   );
 };
